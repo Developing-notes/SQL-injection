@@ -44,3 +44,13 @@ else{
  
 console.log("Welcome to Programiz!");
 3.includes check
+
+const userInput = "malicious' OR 1=1; DROP TABLE users; --";
+const sqlInjectionPattern = /(\b(union|select|insert|update|delete|from|where|drop|alter|create|database|exec|executenonquery|execute)\b|\-\-|\/\*)/i;
+
+if (sqlInjectionPattern.test(userInput)) {
+  console.log("Potential SQL injection detected!");
+} else {
+  console.log("Input seems safe.");
+}
+
