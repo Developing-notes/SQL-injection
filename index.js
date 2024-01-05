@@ -15,3 +15,25 @@
     }
 
     console.log(isValidParams)
+
+
+
+https://www.stackhawk.com/blog/node-js-sql-injection-guide-examples-and-prevention/
+https://www.stackhawk.com/blog/react-command-injection-examples-and-prevention/
+
+1.id=isnan check
+
+2.let x="gmaico"
+  const re = /^[A-Za-z]+$/;
+
+
+if(x.match(re))
+{
+    console.log("true")
+}
+else{
+    console.log("false")
+}
+ 
+console.log("Welcome to Programiz!");
+3.includes check
